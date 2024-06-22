@@ -12,6 +12,6 @@ with sync_playwright() as  _playwright:
     _profile_img = _page.locator('//img[@class="bili-avatar-img bili-avatar-face bili-avatar-img-radius"]')
     expect(_profile_img).to_be_visible(timeout=10 * 60 * 1000)
 
-    _context.storage_state(path="state.json")
+    _context.storage_state(path="/home/pi/.config/bilibili/state.json")
 
  

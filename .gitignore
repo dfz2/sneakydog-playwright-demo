@@ -1,2 +1,7 @@
 .venv
 __pycache__
+
+
+state.json
+requirements-dev.lock
+requirements.lock

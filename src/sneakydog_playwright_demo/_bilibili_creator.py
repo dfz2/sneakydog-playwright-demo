@@ -4,8 +4,8 @@ from playwright.sync_api import sync_playwright, Page
 
 
 with sync_playwright() as  _playwright:
-    browser = _playwright.chromium.launch(headless=False)
-    _context = browser.new_context(storage_state="/home/dfz/Projects/sneakydog-playwright-demo/state.json", record_video_dir="./")
+    browser = _playwright.chromium.launch(headless=True)
+    _context = browser.new_context(storage_state="/home/pi/.config/bilibili/state.json")
     _page: Page = _context.new_page()
     _page.goto("https://member.bilibili.com/platform/upload/video/frame")
 
